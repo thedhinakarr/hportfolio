@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 const ContactForm = () => {
@@ -13,7 +14,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate("/thank-you/"))
+      .then(() => Link("/thank-you/"))
       .catch((error) => alert(error));
   };
 
