@@ -1,7 +1,10 @@
-import { navigate } from 'gatsby';
-import React from 'react';
 
-const ContactForm = () => {
+import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
+import React from "react";
+import { navigate } from 'gatsby';
+
+
+export default function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,32 +20,158 @@ const ContactForm = () => {
       .then(() => { alert("Your input has been submitted. Thank you!"); navigate("/"); })
       .catch((error) => alert(error));
   };
-
-
   return (
-    <form onSubmit={handleSubmit} name="contact" method="post" className="border-dblue border-4 p-3 max-w-md mx-auto" data-netlify="true">
-      {/* Add hidden form fields */}
+    <form onSubmit={handleSubmit} name="contact" method="post" className="m-5 p-3 w-1/2 mx-auto">
       <input type="hidden" name="form-name" value="contact" />
+      <div className="space-y-12 justify-center">
+        <div className="pb-4">
 
-      {/* Rest of your form */}
-      <p>
-        <label className="block mb-2">Your Name:</label>
-        <input type="text" name="name" className="w-full border border-gray-300 rounded-md px-3 py-2" />
-      </p>
-      <p>
-        <label className="block mb-2">Your Email:</label>
-        <input type="email" name="email" className="w-full border border-gray-300 rounded-md px-3 py-2" />
-      </p>
-      <p>
-        <label className="block mb-2">Message:</label>
-        <textarea name="message" className="w-full border border-gray-300 rounded-md px-3 py-2"></textarea>
-      </p>
-      <p>
-        <button type="submit" className="items-center justify-center bg-blue hover:bg-dblue text-white font-bold py-2 px-4 rounded">Send</button>
-      </p>
+          <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div className="sm:col-span-3">
+              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray">
+                First name
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+                Last name
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  autoComplete="family-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                Email address
+              </label>
+              <div className="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="text" className="block text-sm font-medium leading-6 text-gray-900">
+                Company name
+              </label>
+              <div className="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="text"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+
+            </div>
+
+            <div className="sm:col-span-3">
+              <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
+                How did you hear about us?
+              </label>
+              <div className="mt-2">
+                <select
+                  id="country"
+                  name="country"
+                  autoComplete="country-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                >
+                  <option>LinkedIn</option>
+                  <option>Word of mouth</option>
+                  <option>Social Media</option>
+                  <option>Google</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div className="sm:col-span-3">
+              <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
+                Country
+              </label>
+              <div className="mt-2">
+                <select
+                  id="country"
+                  name="country"
+                  autoComplete="country-name"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                >
+                  <option>United States</option>
+                  <option>India</option>
+                  <option>Mexico</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="col-span-full">
+              <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-gray">
+                Please specify the nature of your enquiry
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="street-address"
+                  id="street-address"
+                  autoComplete="street-address"
+                  className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray focus:ring-2"
+                />
+              </div>
+            </div>
+
+            <div className="col-span-full">
+              <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-gray">
+                Message
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="street-address"
+                  id="street-address"
+                  autoComplete="street-address"
+                  className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray focus:ring-2"
+                />
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div className="mt-6 flex items-center justify-center">
+
+        <button
+          type="submit"
+          className="rounded-md bg-blue w-1/2 px-3 py-3 text-md font-semibold text-white shadow-sm hover:bg-dblue"
+        >
+          Submit
+        </button>
+      </div>
     </form>
-
   )
-};
-
-export default ContactForm;
+}

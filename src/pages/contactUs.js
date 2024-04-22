@@ -3,20 +3,18 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 
+import { StaticImage } from 'gatsby-plugin-image';
+
 const ContactUsPage = () => {
   return (
     <div>
       <Header />
-      {/* <div>
-        <StaticImage
-          src="../images/HI.png"
-          alt="Image 1"
-        />
-        <StaticImage
-          src="../images/HI.png"
-          alt="Image 1"
-        />
-      </div> */}
+      <div className="bg-blue text-white text-center py-24 flex flex-col items-center">
+        <h1 className="text-6xl font-bold py-4">Enquiry?</h1>
+        <hr className="w-1/2" />
+        <p className="mt-4">Share your details and we will get back to you soon.</p>
+      </div>
+
       <ContactForm />
 
       <Footer />
@@ -26,4 +24,4 @@ const ContactUsPage = () => {
 
 export default ContactUsPage
 
-export const Head = () => <title>Hiptify | Contact-us</title>
+export const Head = () => <title>Contact Us - Hiptify </title>

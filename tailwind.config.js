@@ -11,8 +11,9 @@ module.exports = {
       'dblue': '#064ACB',
       'blue': '#008DDA',
       'orange': '#F3A953',
-      'ivory': '#F2F3F3'
+      'ivory': '#F2F3F3',
+      'gray': '#111827'
     }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
