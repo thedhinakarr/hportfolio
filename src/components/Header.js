@@ -94,7 +94,7 @@ const Header = () => {
           {/* Repeat for other menu items */}
           <Link onMouseEnter={() => handleMouseLeave()} to="/" className="rounded-md text-white hover:text-orange transition duration-300">Our Work</Link>
           <Link to="/" className="rounded-md text-white hover:text-orange transition duration-300">Our Team</Link>
-          <Link to="/" className=" bg-orange p-3 rounded-md text-white hover:text-orange hover:bg-ivory transition duration-300">Contact Us</Link>
+          <Link to="/contactUs" className=" bg-orange p-3 rounded-md text-white hover:text-orange hover:bg-ivory transition duration-300">Contact Us</Link>
         </nav>
 
 

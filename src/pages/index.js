@@ -3,7 +3,8 @@ import { useState } from "react";
 import { StaticImage } from 'gatsby-plugin-image';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
+import ContactForm from "../components/ContactForm";
 
 const IndexPage = () => {
   const [showHero, setShowHero] = useState(false);
@@ -25,6 +26,7 @@ const IndexPage = () => {
           alt="Image 1"
         />
       </div>
+
       <Footer />
     </div>
   )
