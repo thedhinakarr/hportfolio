@@ -16,14 +16,17 @@ const IndexPage = () => {
     <div>
       <Header />
       <div>
-        <StaticImage
-          src="../images/HI.png"
-          alt="Image 1"
-        />
-        <StaticImage
-          src="../images/HI.png"
-          alt="Image 1"
-        />
+        <button onClick={toggleHero}>Toggle Hero</button>
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: showHero ? 1 : 0, opacity: showHero ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-blue text-white p-8"
+        >
+          {/* Your hero content goes here */}
+          <h1 className="text-4xl text-black font-bold">Welcome to Our Website</h1>
+          <p className="text-lg text-black">Discover amazing content and more!</p>
+        </motion.div>
       </div>
       <Footer />
     </div>
