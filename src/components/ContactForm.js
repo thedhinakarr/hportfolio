@@ -1,4 +1,3 @@
-import { navigate } from 'gatsby';
 import React from 'react';
 
 const ContactForm = () => {
@@ -14,13 +13,13 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate("/thank-you/"))
+      .then(() => alert("Your input has been submitted. Thank you!"))
       .catch((error) => alert(error));
   };
 
 
   return (
-    <form onSubmit={handleSubmit} name="contact" method="POST" className=" border-dblue border-4 p-3 max-w-md mx-auto" data-netlify="true">
+    <form onSubmit={handleSubmit} name="contact" method="post" className=" border-dblue border-4 p-3 max-w-md mx-auto" data-netlify="true">
       <p>
         <label className="block mb-2">Your Name:</label>
         <input type="text" name="name" className="w-full border border-gray-300 rounded-md px-3 py-2" />
