@@ -2,6 +2,7 @@ import * as React from "react"
 import { navigate, Link } from 'gatsby';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Industries = () => {
   return (
@@ -12,6 +13,11 @@ const Industries = () => {
         <hr className="w-1/2" />
         <p className="mt-4">Unlocking success across diverse industries.</p>
       </div>
+      <StaticImage
+        src="../images/industriesHero.png"
+        alt="Image 1"
+      />
+
       <Footer />
     </div>
   )
