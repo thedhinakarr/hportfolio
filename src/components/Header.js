@@ -47,25 +47,25 @@ const Header = () => {
                 <div className="grid grid-cols-2 gap-7">
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className=" hover:underline">Development </Link>
+                      <Link to="/services" className=" hover:underline">Development </Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">QA Automation</Link>
+                      <Link to="/services" className=" hover:underline">QA Automation</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Enterprise Architecture</Link>
+                      <Link to="/services" className=" hover:underline">Enterprise Architecture</Link>
                     </li>
 
                   </ul>
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className=" hover:underline mb-10">DevOps</Link>
+                      <Link to="/services" className=" hover:underline mb-10">DevOps</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">IT Support</Link>
+                      <Link to="/services" className=" hover:underline">IT Support</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Data Entry</Link>
+                      <Link to="/services" className=" hover:underline">Data Entry</Link>
                     </li>
 
                   </ul>
@@ -97,19 +97,19 @@ const Header = () => {
                 <div className="grid grid-cols-2 gap-7">
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className=" hover:underline">Retail Solutions </Link>
+                      <Link to="/industries" className=" hover:underline">Retail Solutions </Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Healthcare Innovations</Link>
+                      <Link to="/industries" className=" hover:underline">Healthcare Innovations</Link>
                     </li>
 
                   </ul>
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className=" hover:underline mb-10">Data Science Insights</Link>
+                      <Link to="/industries" className=" hover:underline mb-10">Data Science Insights</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">ETL Solutions</Link>
+                      <Link to="/industries" className=" hover:underline">ETL Solutions</Link>
                     </li>
                   </ul>
 
