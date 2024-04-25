@@ -42,37 +42,32 @@ const Header = () => {
                 onMouseLeave={() => handleMouseLeave()}
                 className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-96 md:w-108 lg:w-120 xl:w-144 bg-white shadow-lg rounded-lg p-4 z-20"
               >
-                <h2 className="text-xl text-orange font-semibold mb-2 text-center">Services</h2>
-                <hr className="text-orange mb-2" />
+                <Link to="/services" className="text-xl text-orange font-semibold mb-2 text-center">Services</Link>
+                <hr className="text-orange mb-5" />
                 <div className="grid grid-cols-2 gap-7">
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className=" hover:underline">Development Services</Link>
+                      <Link to="/" className=" hover:underline">Development </Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Mobile App Development</Link>
+                      <Link to="/" className=" hover:underline">QA Automation</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Web Development</Link>
+                      <Link to="/" className=" hover:underline">Enterprise Architecture</Link>
                     </li>
 
                   </ul>
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className=" hover:underline mb-10">Quality Assurance</Link>
+                      <Link to="/" className=" hover:underline mb-10">DevOps</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Automated Testing</Link>
+                      <Link to="/" className=" hover:underline">IT Support</Link>
                     </li>
                     <li>
-                      <Link to="/" className=" hover:underline">Manual Testing</Link>
+                      <Link to="/" className=" hover:underline">Data Entry</Link>
                     </li>
-                    <li>
-                      <Link to="/" className=" hover:underline">UI/UX Design</Link>
-                    </li>
-                    <li>
-                      <Link to="/" className=" hover:underline">Consulting Services</Link>
-                    </li>
+
                   </ul>
 
                 </div>
@@ -97,54 +92,36 @@ const Header = () => {
                 onMouseLeave={() => handleMouseLeave()}
                 className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-72 md:w-96 lg:w-108 bg-white shadow-lg rounded-lg p-4 z-20"
               >
-                <h2 className="text-xl font-semibold mb-2 text-orange text-center">Industries</h2>
-                <hr className="text-orange mb-1" />
-                <div className="flex justify-between">
-                  <ul className="flex flex-col gap-2 items-left w-1/3">
+                <Link to="/industries" className="text-xl font-semibold mb-2 text-orange text-center">Industries</Link>
+                <hr className="text-orange mb-5" />
+                <div className="grid grid-cols-2 gap-7">
+                  <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Gaming</Link>
+                      <Link to="/" className=" hover:underline">Retail Solutions </Link>
                     </li>
                     <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Web</Link>
+                      <Link to="/" className=" hover:underline">Healthcare Innovations</Link>
+                    </li>
+
+                  </ul>
+                  <ul className="flex flex-col gap-2 items-start">
+                    <li>
+                      <Link to="/" className=" hover:underline mb-10">Data Science Insights</Link>
                     </li>
                     <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Mobile</Link>
+                      <Link to="/" className=" hover:underline">ETL Solutions</Link>
                     </li>
                   </ul>
-                  <ul className="flex flex-col gap-2 items-left w-1/3">
-                    <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Finance</Link>
-                    </li>
-                    <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Healthcare</Link>
-                    </li>
-                    <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Education</Link>
-                    </li>
-                  </ul>
-                  <ul className="flex flex-col gap-2 items-left w-1/3">
-                    <li>
-                      <Link to="/" className="text-blue-600 hover:underline">E-commerce</Link>
-                    </li>
-                    <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Social Media</Link>
-                    </li>
-                    <li>
-                      <Link to="/" className="text-blue-600 hover:underline">Entertainment</Link>
-                    </li>
-                  </ul>
+
                 </div>
               </div>
-
-
-
 
             )}
           </div>
 
           {/* Repeat for other menu items */}
-          <Link onMouseEnter={() => handleMouseLeave()} to="/" className="rounded-md text-white hover:text-orange transition duration-300">Our Work</Link>
-          <Link to="/" className="rounded-md text-white hover:text-orange transition duration-300">Our Team</Link>
+          <Link onMouseEnter={() => handleMouseLeave()} to="/ourWork" className="rounded-md text-white hover:text-orange transition duration-300">Our Work</Link>
+          <Link to="/aboutUs" className="rounded-md text-white hover:text-orange transition duration-300">About Us</Link>
           <Link to="/contactUs" className=" bg-orange p-3 rounded-md text-white hover:text-orange hover:bg-ivory transition duration-300">Contact Us</Link>
         </nav>
 
