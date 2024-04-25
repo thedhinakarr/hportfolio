@@ -18,13 +18,10 @@ const IndexPage = () => {
       <Header />
       <div>
         <StaticImage
-          src="../images/HI.png"
+          src="../images/hero1.png"
           alt="Image 1"
         />
-        <StaticImage
-          src="../images/HI.png"
-          alt="Image 1"
-        />
+
       </div>
 
       <Footer />
