@@ -40,19 +40,45 @@ const Header = () => {
             {servicesHoveredOption === 'devservices' && (
               <div
                 onMouseLeave={() => handleMouseLeave()}
-                className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-72 md:w-96 lg:w-108 bg-white shadow-lg rounded-lg p-4 z-20"
+                className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-96 md:w-108 lg:w-120 xl:w-144 bg-white shadow-lg rounded-lg p-4 z-20"
               >
-                <h2 className="text-xl font-semibold mb-2 text-center">Services</h2><hr className="text-orange mb-1" />
-                <ul className="flex flex-col items-center">
-                  <li>
-                    <Link to="/" className="text-blue-600 hover:underline">Development Services</Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="text-blue-600 hover:underline">QA Services</Link>
-                  </li>
-                  {/* Add more sub options */}
-                </ul>
+                <h2 className="text-xl text-orange font-semibold mb-2 text-center">Services</h2>
+                <hr className="text-orange mb-2" />
+                <div className="grid grid-cols-2 gap-7">
+                  <ul className="flex flex-col gap-2 items-start">
+                    <li>
+                      <Link to="/" className=" hover:underline">Development Services</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className=" hover:underline">Mobile App Development</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className=" hover:underline">Web Development</Link>
+                    </li>
+
+                  </ul>
+                  <ul className="flex flex-col gap-2 items-start">
+                    <li>
+                      <Link to="/" className=" hover:underline mb-10">Quality Assurance</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className=" hover:underline">Automated Testing</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className=" hover:underline">Manual Testing</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className=" hover:underline">UI/UX Design</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className=" hover:underline">Consulting Services</Link>
+                    </li>
+                  </ul>
+
+                </div>
               </div>
+
+
             )}
           </div>
 
@@ -71,20 +97,45 @@ const Header = () => {
                 onMouseLeave={() => handleMouseLeave()}
                 className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-72 md:w-96 lg:w-108 bg-white shadow-lg rounded-lg p-4 z-20"
               >
-                <h2 className="text-xl font-semibold mb-2 text-center">Industries</h2><hr className="text-orange mb-1" />
-                <ul className="flex flex-col items-center">
-                  <li>
-                    <Link to="/" className="text-blue-600 hover:underline">Gaming</Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="text-blue-600 hover:underline">Web</Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="text-blue-600 hover:underline">Mobile</Link>
-                  </li>
-                  {/* Add more sub options */}
-                </ul>
+                <h2 className="text-xl font-semibold mb-2 text-orange text-center">Industries</h2>
+                <hr className="text-orange mb-1" />
+                <div className="flex justify-between">
+                  <ul className="flex flex-col gap-2 items-left w-1/3">
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Gaming</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Web</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Mobile</Link>
+                    </li>
+                  </ul>
+                  <ul className="flex flex-col gap-2 items-left w-1/3">
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Finance</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Healthcare</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Education</Link>
+                    </li>
+                  </ul>
+                  <ul className="flex flex-col gap-2 items-left w-1/3">
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">E-commerce</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Social Media</Link>
+                    </li>
+                    <li>
+                      <Link to="/" className="text-blue-600 hover:underline">Entertainment</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
 
 
 
