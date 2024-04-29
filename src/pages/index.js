@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactForm from "../components/ContactForm";
+import Layout from "../components/Layout";
 
 const IndexPage = () => {
   const [showHero, setShowHero] = useState(false);
@@ -14,8 +15,7 @@ const IndexPage = () => {
   };
 
   return (
-    <div>
-      <Header />
+    <Layout>
       <div>
         <StaticImage
           src="../images/hero1.png"
@@ -24,8 +24,7 @@ const IndexPage = () => {
 
       </div>
 
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 

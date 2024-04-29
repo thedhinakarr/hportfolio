@@ -47,25 +47,25 @@ const Header = () => {
                 <div className="grid grid-cols-2 gap-7">
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/services" className=" hover:underline">Development </Link>
+                      <Link to="/services/development" className=" hover:underline">Development </Link>
                     </li>
                     <li>
-                      <Link to="/services" className=" hover:underline">QA Automation</Link>
+                      <Link to="/services/qaAutomation" className=" hover:underline">QA Automation</Link>
                     </li>
                     <li>
-                      <Link to="/services" className=" hover:underline">Enterprise Architecture</Link>
+                      <Link to="/services/enterpriseArchitecture" className=" hover:underline">Enterprise Architecture</Link>
                     </li>
 
                   </ul>
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
-                      <Link to="/services" className=" hover:underline mb-10">DevOps</Link>
+                      <Link to="/services/devops" className=" hover:underline mb-10">DevOps</Link>
                     </li>
                     <li>
-                      <Link to="/services" className=" hover:underline">IT Support</Link>
+                      <Link to="/services/itSupport" className=" hover:underline">IT Support</Link>
                     </li>
                     <li>
-                      <Link to="/services" className=" hover:underline">Data Entry</Link>
+                      <Link to="/services/dataEntry" className=" hover:underline">Data Entry</Link>
                     </li>
 
                   </ul>
@@ -121,7 +121,6 @@ const Header = () => {
 
           {/* Repeat for other menu items */}
           <Link onMouseEnter={() => handleMouseLeave()} to="/ourWork" className="rounded-md text-white hover:text-orange transition duration-300">Our Work</Link>
-          <Link to="/aboutUs" className="rounded-md text-white hover:text-orange transition duration-300">About Us</Link>
           <Link to="/contactUs" className=" bg-orange p-3 rounded-md text-white hover:text-orange hover:bg-ivory transition duration-300">Contact Us</Link>
         </nav>
 

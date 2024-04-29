@@ -3,11 +3,11 @@ import { navigate, Link } from 'gatsby';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { StaticImage } from 'gatsby-plugin-image'
+import Layout from "../components/Layout";
 
 const Services = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <div className="bg-blue text-white text-center py-20 flex flex-col items-center">
         <h1 className="text-6xl font-bold py-4">Our Work</h1>
         <hr className="w-1/2" />
@@ -17,8 +17,7 @@ const Services = () => {
         src="../images/ourWorkHero.png"
         alt="Image 1"
       />
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 

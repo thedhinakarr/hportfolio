@@ -2,13 +2,13 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
-
+import Layout from "../components/Layout";
 import { StaticImage } from 'gatsby-plugin-image';
+
 
 const ContactUsPage = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <div className="bg-blue text-white text-center py-24 flex flex-col items-center">
         <h1 className="text-6xl font-bold py-4">Enquiry?</h1>
         <hr className="w-1/2" />
@@ -17,8 +17,7 @@ const ContactUsPage = () => {
 
       <ContactForm />
 
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 
