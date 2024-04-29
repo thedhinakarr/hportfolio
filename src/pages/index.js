@@ -1,10 +1,6 @@
 import * as React from "react"
 import { useState } from "react";
 import { StaticImage } from 'gatsby-plugin-image';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { motion, AnimatePresence } from "framer-motion";
-import ContactForm from "../components/ContactForm";
 import Layout from "../components/Layout";
 
 const IndexPage = () => {
@@ -30,4 +26,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Hiptify</title>
+export const Head = () => (
+  <>
+    <title>Hiptify</title>
+  </>
+)

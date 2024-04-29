@@ -7,7 +7,7 @@ const Development = () => {
   return (
     <Layout>
       <div className="bg-blue text-white text-center pt-20 pb-10 flex flex-col items-center">
-        <h1 className="text-6xl font-bold py-4">Development Services</h1>
+        <h1 className="text-5xl font-bold py-4">Development Services</h1>
         <hr className="w-1/2" />
         <p className="mt-4 text-xl">We offer a comprehensive range of development services tailored to your business needs.
           Our expertise includes:</p>

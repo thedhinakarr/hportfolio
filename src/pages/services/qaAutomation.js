@@ -6,7 +6,7 @@ const QAAutomation = () => {
   return (
     <Layout>
       <div className="bg-blue text-white text-center pt-20 pb-10 flex flex-col items-center">
-        <h1 className="text-6xl font-bold py-4">QA Automation Services</h1>
+        <h1 className="text-5xl font-bold py-4">QA Automation Services</h1>
         <hr className="w-1/2" />
         <p className=" text-xl mt-4"> Our QA automation services ensure the reliability and quality of your software applications.</p>
       </div>

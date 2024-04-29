@@ -10,7 +10,7 @@ const ContactUsPage = () => {
   return (
     <Layout>
       <div className="bg-blue text-white text-center py-24 flex flex-col items-center">
-        <h1 className="text-6xl font-bold py-4">Enquiry?</h1>
+        <h1 className="text-5xl font-bold py-4">Enquiry?</h1>
         <hr className="w-1/2" />
         <p className="mt-4">Share your details and we will get back to you soon.</p>
       </div>
