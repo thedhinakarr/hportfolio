@@ -110,4 +110,4 @@ const Services = () => {
 
 export default Services
 
-export const Head = () => <title>Services</title>
+export const Head = () => <title>Services - Hiptify</title>

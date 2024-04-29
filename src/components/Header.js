@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import { FiChevronDown } from 'react-icons/fi';
 
 const Header = () => {
@@ -30,8 +30,9 @@ const Header = () => {
         <nav className="space-x-6 font-semibold">
           <div className="relative inline-block">
             <span
-              className="text-white flex hover:text-orange cursor-pointer mr-1 transition duration-300"
+              className="text-white flex hover:text-orange hover:underline cursor-pointer mr-1"
               onMouseEnter={() => handleServicesMouseEnter('devservices')}
+              onClick={(e) => { e.preventDefault(); navigate("/services") }}
             >
               Services
               <FiChevronDown className="mt-1 h-4 w-4 font-bold" />
@@ -42,8 +43,6 @@ const Header = () => {
                 onMouseLeave={() => handleMouseLeave()}
                 className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-96 md:w-108 lg:w-120 xl:w-144 bg-white shadow-lg rounded-lg p-4 z-20"
               >
-                <Link to="/services" className="text-xl text-orange font-semibold mb-2 text-center">Services</Link>
-                <hr className="text-orange mb-5" />
                 <div className="grid grid-cols-2 gap-7">
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
@@ -80,8 +79,9 @@ const Header = () => {
           {/* Repeat for Industries */}
           <div className="relative inline-block">
             <span
-              className="text-white flex hover:text-orange cursor-pointer mr-1 transition duration-300"
+              className="text-white flex hover:text-orange hover:underline cursor-pointer mr-1"
               onMouseEnter={() => handleIndustriesMouseEnter('industries')}
+              onClick={(e) => { e.preventDefault(); navigate("/industries") }}
             >
               Industries
               <FiChevronDown className="mt-1 h-4 w-4 font-bold" />
@@ -92,8 +92,6 @@ const Header = () => {
                 onMouseLeave={() => handleMouseLeave()}
                 className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-72 md:w-96 lg:w-108 bg-white shadow-lg rounded-lg p-4 z-20"
               >
-                <Link to="/industries" className="text-xl font-semibold mb-2 text-orange text-center">Industries</Link>
-                <hr className="text-orange mb-5" />
                 <div className="grid grid-cols-2 gap-7">
                   <ul className="flex flex-col gap-2 items-start">
                     <li>
