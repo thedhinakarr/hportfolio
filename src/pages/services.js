@@ -62,10 +62,10 @@ const Services = () => {
           </div>
           <div onClick={(e) => {
             e.preventDefault();
-            navigate("/services/devops");
+            navigate("/services/manualTesting");
           }} className="group relative hover:bg-gray-100 hover:cursor-pointer p-8 rounded-lg">
             <div className="text-balance">
-              <h2 className="flex text-3xl text-orange font-bold mb-2"> <MdOutlineDoubleArrow className="mt-1 mr-1" />DevOps</h2>
+              <h2 className="flex text-3xl text-orange font-bold mb-2"> <MdOutlineDoubleArrow className="mt-1 mr-1" />Manual Testing</h2>
               <p className="text-black text-xl mb-0">
                 Our enterprise architecture solutions drive innovation and agility across your organization.
               </p>
@@ -99,7 +99,19 @@ const Services = () => {
             </div>
             <div className="absolute inset-0 hidden group-hover:block bg-black bg-opacity-10 rounded-lg"></div>
           </div>
+          <div onClick={(e) => {
+            e.preventDefault();
+            navigate("/services/devops");
+          }} className="group relative hover:bg-gray-100 hover:cursor-pointer p-8 rounded-lg">
+            <div className="text-balance">
+              <h2 className="flex text-3xl text-orange font-bold mb-2"> <MdOutlineDoubleArrow className="mt-1 mr-1" />DevOps</h2>
+              <p className="text-black text-xl mb-0">
+                Our enterprise architecture solutions drive innovation and agility across your organization.
+              </p>
 
+            </div>
+            <div className="absolute inset-0 hidden group-hover:block bg-black bg-opacity-10 rounded-lg"></div>
+          </div>
 
         </div>
 
