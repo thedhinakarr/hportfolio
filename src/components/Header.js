@@ -76,48 +76,7 @@ const Header = () => {
             )}
           </div>
 
-          {/* Repeat for Industries */}
-          <div className="relative inline-block">
-            <span
-              className="text-white flex hover:text-orange hover:underline cursor-pointer mr-1"
-              onMouseEnter={() => handleIndustriesMouseEnter('industries')}
-              onClick={(e) => { e.preventDefault(); navigate("/industries") }}
-            >
-              Industries
-              <FiChevronDown className="mt-1 h-4 w-4 font-bold" />
-            </span>
-
-            {industriesHoveredOption === 'industries' && (
-              <div
-                onMouseLeave={() => handleMouseLeave()}
-                className="absolute left-1/2 transform -translate-x-1/2 mt-6 w-72 md:w-96 lg:w-108 bg-white shadow-lg rounded-lg p-4 z-20"
-              >
-                <div className="grid grid-cols-2 gap-7">
-                  <ul className="flex flex-col gap-2 items-start">
-                    <li>
-                      <Link to="/industries#retail-solutions" className=" hover:underline">Retail Solutions </Link>
-                    </li>
-                    <li>
-                      <Link to="/industries#healthcare-innovations" className=" hover:underline">Healthcare Innovations</Link>
-                    </li>
-
-                  </ul>
-                  <ul className="flex flex-col gap-2 items-start">
-                    <li>
-                      <Link to="/industries#data-science-insights" className=" hover:underline mb-10">Data Science Insights</Link>
-                    </li>
-                    <li>
-                      <Link to="/industries#etl-solutions" className=" hover:underline">ETL Solutions</Link>
-                    </li>
-                  </ul>
-
-                </div>
-              </div>
-
-            )}
-          </div>
-
-          {/* Repeat for other menu items */}
+          <Link onMouseEnter={() => handleMouseLeave()} to="/industries" className="rounded-md text-white hover:text-orange transition duration-300">Industries</Link>
           <Link onMouseEnter={() => handleMouseLeave()} to="/ourWork" className="rounded-md text-white hover:text-orange transition duration-300">Our Work</Link>
           <Link to="/contactUs" className=" bg-orange p-3 rounded-md text-white hover:text-orange hover:bg-ivory transition duration-300">Contact Us</Link>
         </nav>
