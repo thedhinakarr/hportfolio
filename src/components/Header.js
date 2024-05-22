@@ -52,6 +52,9 @@ const Header = () => {
                       <Link to="/services/qaAutomation" className=" hover:underline">QA Automation</Link>
                     </li>
                     <li>
+                      <Link to="/services/manualTesting" className=" hover:underline">Manual Testing</Link>
+                    </li>
+                    <li>
                       <Link to="/services/enterpriseArchitecture" className=" hover:underline">Enterprise Architecture</Link>
                     </li>
 
