@@ -2,6 +2,8 @@ import * as React from "react"
 import { useState } from "react";
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from "../components/Layout";
+import ImageCarousel from "../components/ImageCarousel";
+import '../styles/carousel.css';
 
 const IndexPage = () => {
   const [showHero, setShowHero] = useState(false);
@@ -12,14 +14,9 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <div>
-        <StaticImage
-          src="../images/hero1.png"
-          alt="Image 1"
-        />
-
+      <div className="bg-black">
+        <ImageCarousel />
       </div>
-
     </Layout>
   )
 }

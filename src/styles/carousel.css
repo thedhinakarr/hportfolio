@@ -1,0 +1,12 @@
+/* carousel.css */
+.carousel .slide {
+  background: transparent;
+}
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in;
+}
+.carousel .control-arrow:hover {
+  opacity: 1;
+}
